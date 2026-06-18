@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      { "source": "/api/greet", "run": { "serviceId": "greet", "region": "us-central1" } }
+    ]
+  },
+  "functions": {
+    "source": "functions"
+  }
+}
